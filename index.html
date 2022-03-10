@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Média</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Média</h1>
+      <h3>Veja aqui sua média de nota de todas as provas!</h3>
+    </header>
+
+    <main>
+      <div id="calc-box">
+        <div class="calc-inputs">
+          <label for="grade"> 1ª Nota</label>
+          <input type="number" name="number" id="grade1" />
+          <br />
+          <label for="grade"> 2ª Nota</label>
+          <input type="number" name="number" id="grade2" />
+          <br />
+          <label for="grade"> 3ª Nota</label>
+          <input type="number" name="number" id="grade3" />
+          <br />
+          <label for="grade"> 4ª Nota</label>
+          <input type="number" name="number" id="grade4" />
+        </div>
+
+        <button onclick="calc();" id="calResult">Calcular</button>
+
+        <div class="calc-result">
+          <label for="result">Sua média é:</label>
+          <br />
+          <input type="text" name="result" id="average" value="" readonly />
+        </div>
+        <div class="final-result">
+          <label for="result"> Resultado Final :</label>
+          <input name="resultado" id="final-result" />
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
